@@ -22,7 +22,7 @@ print('-----------------------')
 # Parameters: book_title (string)
 # Return: Not needed for this function
 def check_out(book_title: str):
-    available_books.remove(book_title)
+    books.remove(book_title)
 
 
 # 1.4 TODO: Check out 'THE POWER OF MOMENTS' using the check_out function
@@ -37,7 +37,7 @@ print('-----------------------')
 # Parameters: book_title (string)
 # Return: Not needed for this function
 def check_in(book_title: str):
-    available_books.append(book_title)
+    books.append(book_title)
 
 
 # 1.7 TODO: Check in 'THE POWER OF MOMENTS' using the check_in function
@@ -53,7 +53,7 @@ print('-----------------------')
 # Parameters: book_title (string)
 # Return: Not needed for this function
 def search_by_name(book_title: str):
-    if book_title in available_books:
+    if book_title in books:
         print('Available')
 
     else:
